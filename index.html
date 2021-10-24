@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .menu {
+            float: left;
+            width: 20%;
+        }
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        .right {
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+            .right {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: Verdana;">
+
+    <div style="background-color: #f1f1f1; padding: 15px;">
+        <h1>Tokyo City</h1>
+        <h3>Explore the city</h3>
+    </div>
+
+    <div style="overflow: auto;">
+        <div class="menu">
+        <div class="menuitem">The Walk</div>
+        <div class="menuitem">Transport</div>
+        <div class="menuitem">History</div>
+        <div class="menuitem">Gallery</div>
+    </div>
+
+    <div class="main">
+        <h2>The Walk</h2>
+        <p>
+            Walk Japan provides authentic and enjoyable tours to discover Japan, its people, 
+            society and culture. Beginning in 1992 with our innovative and best-selling Nakasendo Way tour, 
+            we were the first to successfully introduce the real Japan, geographically and culturally, that 
+            often remains inaccessible for most visitors to the country. Since then, Walk Japan has created 
+            more original tours throughout Japan and been widely recognised for its work, including selection 
+            by National Geographic as one of the 200 Best Adventure Travel Companies on Earth.
+        </p>
+        <img src="./image/tokyo-city.jpg" alt="Tokyo City" width="1000" height="700">
+    </div>
+
+    <div class="right">
+        <h2>Transport</h2>
+        <p>
+            The transport network in Greater Tokyo includes public and private rail and highway networks; airports 
+            for international, domestic, and general aviation; buses; motorcycle delivery services, walking, bicycling, 
+            and commercial shipping. While the nexus is in the central part of Tokyo, every part of the Greater Tokyo Area 
+            has rail or road transport services. The sea and air transport is available from a limited number of ports for the general public.
+        </p>
+        <h2>History</h2>
+        <p>
+            The history of the city of Tokyo stretches back some 400 years. Originally named Edo, the city started 
+            to flourish after Tokugawa Ieyasu established the Tokugawa Shogunate here in 1603. As the center of politics 
+            and culture in Japan, Edo grew into a huge city with a population of over a million by the mid-eighteenth century. 
+            Throughout this time, the Emperor resided in Kyoto, which was the formal capital of the nation. The Edo Period lasted 
+            for nearly 260 years until the Meiji Restoration in 1868, when the Tokugawa Shogunate ended and imperial rule was restored. 
+            The Emperor moved to Edo, which was renamed Tokyo. Thus, Tokyo became the capital of Japan.
+        </p>
+        </div>
+    </div>
+    
+</body>
+</html>
